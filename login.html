@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Logowanie do sklepu</title>
+    <!--<link rel="stylesheet" href="./resources/css/index.css" type="text/css"> -->
+    <link rel="stylesheet" href="./resources/css/logowanie.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+			<h1>Zaloguj się</h1>
+      <p>Stwórz konto:</p>
+      <form action="./main.html" method="GET">
+        <label for="username">Nazwa użytkownika:</label>
+        <br>
+				<input id="username" name="username" type="text" required minlength="3" maxlength="15">
+        <br>
+        <label for="pw">Hasło:</label>
+        <br>
+        <!--Add the pattern attribute to the input below-->
+				<input id="pw" name="pw" type="password" required minlength="8" maxlength="15">
+        <br>
+        <div id="button">
+          <input type="submit" value="Zaloguj">
+        </div>
+        
+      </form>
+    </section>
+  </body>
+</html>

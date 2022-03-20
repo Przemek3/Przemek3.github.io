@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <script src="./resources/javascript/app.js" async>  </script>
+  
+</head>
+<body>
+  <div id="kartka">
+    <header>
+      <h1 class="mainTitle">Kątaktryka</h1>
+      <ul class="kategorie">
+        <li>Aparatura modułowa</li>
+        <li>Automatyka</li>
+        <li>Gniazdka</li>
+        <li>Rozdzielnice</li>
+        <li>Kable i przewody</li>
+        <li>Przedłużacze i rozgałęźniki</li>
+        <li>Osprzet do kabli</li>
+        <li>Oświetlenie techniczne</li>
+        <li>Źródła zasilania</li>      
+        <li>Systemy ogrodowe i uziemienia</li>
+      </ul>
+      <input id="wyszukiwanie" type="search" placeholder="Szukaj..."/>
+      <p class="logowanie">
+        <a href="./login.html"><button>zaloguj się</button></a>
+        <a href="./rejestracja.html"><button>zarejestruj się</button></a>
+      </p>
+    </header>
+    <hr>
+    <section class="stronka">
+      <div id="filtrowanie">
+        <ul id="filtry">
+          <li id="parentkolej"><p id="kolej">Sortuj</p>
+            <form class="expander">
+              <label for="wyborSortowania">według</label>
+              <select name="wyborSortowania" id="wyborSortowania">
+                <option value="wgCeny">ceny</option>
+                <option value="wgPopularnosci">popularności</option>
+                <option value="wgDostepnosci">dostępności</option>
+              </select>
+              <br><br>
+              <input type="radio" id="rosnaco" name="kolejnosc" value="1" checked="checked">
+              <label for="rosnaco">rosnąco</label>
+              <input type="radio" id="malejaco" name="kolejnosc" value="0">
+              <label for="malejaco">malejąco</label>
+            </form>
+          </li>
+          <li id="parentzakres"><p id="zakres">Cena</p>
+            <div class="expander">
+              <form>
+                <label for="cenaOd">od</label>
+                <br>
+                <input type="number" placeholder="0" required min="0" max="10000000" id="cenaOd"/>
+              </form> 
+              <form>
+                <label for="cenaDo">do</label>
+                <br>
+                <input type="number" placeholder="do" required min="0" max="10000000"  id="cenaDo"/>
+              </form>
+            </div>
+          </li>
+          <li id="parentmarka"><p id="marka">Marka</p>
+            <form class="expander">
+              <label for="cheese">Marka 1</label>
+              <input id="cheese" name="topping" type="checkbox" value="cheese">
+              <br>
+              <label for="pepperoni">Marka 2</label>
+              <input id="pepperoni" name="topping" type="checkbox" value="pepperoni">
+              <br>
+            </form>
+          </li>
+          <li id="libtnFiltruj"><button id="btnFiltruj" type="submit">Filtruj</button></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

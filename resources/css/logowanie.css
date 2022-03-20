@@ -1,0 +1,35 @@
+body {
+    background-image: url('../images/warsztat.jpg');
+    color: #000000;
+    font-family: "Fjalla One", Arial;
+  }
+  
+  form {
+    line-height: 25px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    overflow: break;
+  }
+  
+  .overlay {
+    width: 80%;
+    min-width: 30%;
+    margin: 3% auto;
+    display: block;
+    padding: 2%;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  
+
+  #button input{
+    padding: 5px 20px;
+    margin: 50px;
+    background-color: blue;
+    color: white;
+  }
